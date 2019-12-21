@@ -786,7 +786,9 @@ export default class AwesomeSlider extends React.Component {
             {this.renderBox('A')}
             {this.renderBox('B')}
           </div>
-          {buttons && (
+          {customContent}
+        </div>
+        {buttons && (
             <Buttons
               rootElement={rootElement}
               cssModule={cssModule}
@@ -800,8 +802,6 @@ export default class AwesomeSlider extends React.Component {
               buttonContentRight={buttonContentRight}
             />
           )}
-          {customContent}
-        </div>
         {bullets && (
           <Bullets
             cssModule={cssModule}
