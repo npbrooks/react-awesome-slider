@@ -788,20 +788,7 @@ export default class AwesomeSlider extends React.Component {
           </div>
           {customContent}
         </div>
-        {buttons && (
-            <Buttons
-              rootElement={rootElement}
-              cssModule={cssModule}
-              onMount={btns => {
-                this.buttons = btns;
-              }}
-              onNext={this.clickNext}
-              onPrev={this.clickPrev}
-              organicArrows={organicArrows}
-              buttonContentLeft={buttonContentLeft}
-              buttonContentRight={buttonContentRight}
-            />
-          )}
+        
         {bullets && (
           <Bullets
             cssModule={cssModule}
@@ -814,6 +801,8 @@ export default class AwesomeSlider extends React.Component {
             }}
           />
         )}
+
+
       </div>
     );
   }
